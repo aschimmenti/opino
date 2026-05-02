@@ -1,0 +1,864 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://w3id.org/opino/Opinion"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://w3id.org/opino/EpistemicRegion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/opino/hasEpistemicRegion"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://w3id.org/opino/Opinion"
+    }, {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://w3id.org/opino/HypothesisValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/opino/hasEpistemicStatus"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://w3id.org/opino/Opinion"
+    }, {
+      "@id" : "_:genid17"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/emmedi/hico/InterpretationAct"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Activity"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://w3id.org/opino/Construal"
+    }, {
+      "@id" : "_:genid22"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/opino/holdsAtTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://w3id.org/opino/AssertionValue"
+    }, {
+      "@id" : "http://w3id.org/opino/ConjectureValue"
+    }, {
+      "@id" : "http://w3id.org/opino/HypothesisValue"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://w3id.org/opino/AssertionValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/opino/hasEpistemicStatus"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://w3id.org/opino/Opinion"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://w3id.org/opino/ConjectureValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/opino/hasEpistemicStatus"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/opino/hasPart"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/emmedi/hico/InterpretationAct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/opino/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "Andrea Schimmenti"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-04-30T14:30:00"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "OPINO (OPINion ONtology) is an ontology for the formal \nrepresentation of opinions as Knowledge Graphs, grounded in \nthe Description and Situation (DnS) Ontology Design Pattern (Gangemi and \nMika 2003) and the DOLCE+DnS Ultralite foundational ontology (DUL). \n\nOPINO adopts DnS as its core architectural backbone. Its primary purpose \nis to serve as a domain-agnostic interface for representing opinions \nacross heterogeneous contexts, without committing to a specific \nrepresentational paradigm. In this context, an opinion is understood as \na perspective-dependent description of an entity, premised on a construed \nstate of affairs. Representations built with OPINO can be aligned to or \nconverted into other models depending on the requirements of a given \napplication. For instance, in the context of projects leveraging CRMinf \nas the primary model for representing propositional content, OPINO can \nwork as a neutral interface layer that bridges the opinion's epistemic \nstructure with CRMinf's inference and belief machinery. Similarly, OPINO \nrepresentations can be mapped to Digital Hermeneutics or \nnanopublication-based architectures when layered provenance is required.\n\nThe core class of OPINO is opino:Opinion, a subclass of dul:Description \nthat represents a perspective-dependent description of an entity, \npremised on a construed state of affairs. The entity being described \n(via opino:describes) and the state of affairs that grounds the \ndescription (via opino:isPremisedOn) are distinct: the Opinion is a \nclaim about an entity that results from the cognizer's construal of \nobservable or documented facts. For instance, the opinion 'the Donation \nof Constantine is a forgery' describes the Donation of Constantine, and \nis premised on a Construal involving the presence of anachronistic Latin, \nfeudal terminology, and inconsistent dating formulae — facts perceived \nand interpreted by the cognizer as evidence for the claim. A different \ncognizer may construe the same facts differently, or construe different \nfacts entirely, producing a different Opinion about the same entity.\n\nAn Opinion is not necessarily an interpretation in the hermeneutical \nsense. It may be as simple as 'Marco is good' or 'this painting is \nbeautiful'. What distinguishes it from a neutral assertion of fact is \nits perspective-dependence: it is always the description of an entity \nas seen through the lens of a specific cognizer, grounded in what that \ncognizer perceives. The opino:Interpretation subclass is reserved for \nthe specific case where an Opinion results from a deliberate \nhermeneutical interpretive act — formally represented as a \nhico:InterpretationAct in HiCO — involving a documented methodology, \na set of criteria, and a source. An Interpretation inherits all the \nepistemic properties of Opinion while adding the full provenance layer \nprovided by HiCO. Not every Opinion is an Interpretation: opinions \nformed in everyday discourse, automated extraction pipelines, or \ncollective community processes may be generated by plain prov:Activity \ninstances without the hermeneutical apparatus that HiCO models.\n\nAn Opinion is satisfied by a Construal — a perspective-dependent \ndul:Situation that reifies the set of facts as perceived by the \ncognizer, following the notion of construal from cognitive linguistics \nand social psychology (Ross 1987; Langacker 2008). The Construal is \nvalid only when interpreted from the standpoint of a specific agent: \nthe same objective state of affairs may be construed differently by \ndifferent cognizers, leading to different Opinions over the same \nentities. The Opinion is the description that emerges from the analysis \nof a Construal — it is what the cognizer concludes from what they \nperceive, directed at the entity the claim is about.\n\nEach Opinion carries an epistemic status, represented by an \nEpistemicStatusParameter valued by one of three EpistemicRegion \nindividuals: AssertionValue (the holder commits to the claim as their \ncurrent considered interpretation), HypothesisValue (the holder commits \ntentatively, pending further evidence), or ConjectureValue (the holder \nentertains the claim as a possibility without sufficient evidence to \nassert it). This determines whether an Opinion is classified as an \nopino:Assertion, opino:Hypothesis, or opino:Conjecture respectively, \nvia owl:equivalentClass definitions.\n\nEach Opinion is also tied to the provenance of its production via \nprov:wasGeneratedBy, which relates it to a prov:Activity. When the \ngenerating activity is a hico:InterpretationAct — as defined by the \nHistorical Context Ontology (HiCO; Daquino and Tomasi 2015) — the \nOpinion is equivalent to an opino:Interpretation. HiCO provides the \nfull provenance context of the interpretive act: the agent who performed \nit, the time, the methodology, and the source document. OPINO does not \nreplicate this layer but bridges to it via the provenance relation.\n\nAgreement, disagreement, and support between Opinions are deliberately \nkept outside the OPINO model. These dynamics are social and \ncommunity-level epistemic phenomena, appropriately handled at the level \nof the prov:Activity node using CiTO properties (cito:agreesWith, \ncito:disagreesWith, cito:citesAsEvidence) as already provided by HiCO's \nintegration with CiTO. OPINO focuses exclusively on the epistemic \nstructure of the individual claim.\n\nThe properties of an Opinion are:\n- opino:isPremisedOn — relates an Opinion to the Construal that \n  constitutes its premises (subproperty of dul:isSatisfiedBy)\n- opino:hasEpistemicStatus — relates an Opinion to its \n  EpistemicStatusParameter (Functional; subproperty of dul:hasParameter)\n- opino:heldBy — shortcut relating an Opinion directly to its holder \n  (range: owl:Thing; subproperty of dul:associatedWith)\n- opino:describes — relates an Opinion to the entity its propositional \n  content is about (subproperty of dul:describes)\n- opino:usesConcept — relates an Opinion to the concept being predicated \n  of its subject (subproperty of dul:usesConcept)\n- prov:wasGeneratedBy — relates an Opinion to the prov:Activity that \n  produced it\n\nOther properties of DUL can also be used to further describe the Opinion \n(such as dul:introduces). The core ones (opino:isPremisedOn, \nopino:describes, opino:usesConcept) were instantiated into OPINO for \nclarity, as subproperties of their DUL counterparts scoped to \nopino:Opinion as domain.\n\nThe properties of a Construal are:\n- opino:grounds — relates a Construal to the Opinion it supports, as \n  premises support a conclusion (inverse of isPremisedOn; subproperty \n  of dul:satisfies)\n- opino:involves — relates a Construal to any entity — object, agent, \n  event, or abstract concept — that the cognizer perceives as \n  participating in the construed state of affairs (subproperty of \n  dul:isSettingFor). When a Construal satisfies a Framester frame via \n  dul:satisfies, the roles of the involved entities can be made explicit \n  using Framester frame element properties (e.g. fe:Artifact.forgery, \n  fe:Means.forgery), providing a more granular representation without \n  requiring modification of the core pattern.\n- opino:perceivedBy — relates a Construal to the cognizer whose \n  perspective constitutes it (range: owl:Thing; subproperty of \n  dul:associatedWith)\n- opino:hasPart — relates a Construal to its constituent sub-Construals, \n  each representing an individual premise (subproperty of dul:hasPart; \n  allValuesFrom opino:Construal)\n- opino:presupposes — relates a Construal to another Construal that must \n  hold as a logical or epistemic premise before it (subproperty of \n  dul:hasPrecondition)\n- opino:enables — relates a Construal to another Construal it makes \n  possible as a subsequent inferential step (subproperty of \n  dul:hasPostcondition)\n- dul:satisfies — optionally relates a sub-Construal to a dul:Description, \n  typically a Framester frame (Gangemi et al. 2016), providing the \n  conceptual vocabulary through which the construed state of affairs \n  is interpreted\n\nA Construal can be extended in two ways. First, by converting it into \na TimeIndexedConstrual — a subclass of opino:Construal equivalent to a \nConstrual that has at least one opino:holdsAtTime relation pointing to a \ndul:TimeInterval — for temporally bounded perceptions, such as 'yesterday \nMarco did something good' or 'this painting was attributed to Caravaggio \nduring the period 1990–2005'. Second, by decomposing it into \nsub-Construals via opino:hasPart, each of which may itself be satisfied \nby a Framester frame describing the inferential role of that premise \nwithin the overall construal. Sub-Construals can be ordered via \nopino:presupposes and opino:enables to represent the logical sequence \nof the inferential chain.\n\nOPINO is informed by the CRMinf extension of CIDOC CRM, the Digital \nHermeneutics model (Daquino, Pasqual and Tomasi 2021), and the SEBI \nontology (https://valentinapasqual.github.io/sebi/). It is released \nunder the Creative Commons Attribution 4.0 International License \n(CC BY 4.0)"
+  }, {
+    "@language" : "en",
+    "@value" : "OPINO is a content Ontology Design Pattern for representing scholarly interpretive opinions. It extends the Description and Situation (DnS) ODP by introducing epistemic status gradation, inter-opinion relations, and a provenance layer via PROV-O and HiCO. It is informed by the Digital Hermeneutics model (Daquino et al., 2021) and the SEBI ontology (https://valentinapasqual.github.io/sebi/)."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "OPINO - OPINion ONtology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OPINO - OPINion ONtology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/emmedi/hico/2020-03-31"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://w3id.org/opino/0.1.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/Assertion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Opinion the holder commits to as their current considered interpretation, supported by evidence or argument they regard as sufficient to warrant commitment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Assertion"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/AssertionValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/opino/EpistemicRegion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An opinion the holder commits to as their current considered interpretation, supported by evidence or argument they regard as sufficient."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Assertion (Region)"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/Conjecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Opinion held with minimal epistemic commitment, entertained as a possibility without sufficient evidence to assert it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Conjecture"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/ConjectureValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/opino/EpistemicRegion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An opinion entertained as a possibility without sufficient evidence to assert it. The holder acknowledges the claim is speculative."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Conjecture (Region)"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/Construal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A situation constituted by the premises as perceived by the agent responsible for an Opinion. It is perspective-dependent — it reifies the state of affairs from the standpoint of the cognizer, not an objective state of affairs. A Construal can be composed of parts, each of which is itself a dul:Situation representing an individual premise (i.e., another state of affairs). The dul:Situation, part of the Construal, can be satisfied by a secondary dul:Description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/EpistemicRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A region in the epistemic quality space representing the degree of individual commitment an agent holds toward an Opinion. Three values are defined: ConjectureValue (speculative), HypothesisValue (tentative), AssertionValue (committed). Community-level reception is handled separately via CiTO properties on hico:InterpretationAct."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Epistemic Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/EpistemicStatusParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A parameter component of an Opinion that carries its epistemic status value. In DnS terms, this is a typed component of the Description that gets valued by a region in the epistemic quality space. Each Opinion has exactly one EpistemicStatusParameter at any given time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Epistemic Status (Parameter)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/Hypothesis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Opinion held tentatively as the current best explanation, pending further evidence or argument. The holder commits to it provisionally while remaining open to revision."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hypothesis"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/HypothesisValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/opino/EpistemicRegion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An opinion held tentatively, pending further evidence or argument. The holder commits to it as the current best explanation while remaining open to revision."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hypothesis (Region)"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/Interpretation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Opinion that results specifically from a hermeneutical interpretive act as defined by HiCO (hico:InterpretationAct). Distinguished from a generic Opinion by the type of prov:Activity that generated it. An Interpretation may simultaneously be a Conjecture, Hypothesis, or Assertion depending on its epistemic status."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Interpretation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/Opinion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A description, in the DnS sense, representing a claim held by an agent about an entity or state of affairs. An Opinion is satisfied by a Construal — the set of facts as perceived by the cognizer that grounds the claim. An Opinion is generated by a prov:Activity, which attributes it to the agent responsible for its production."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Opinion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/TimeIndexedConstrual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Construal where the perceived state of affairs holds only during a specific time interval. Inherits from both opino:Construal — carrying the perspectival and epistemic properties of a perception — and dul:TimeIndexedRelation, which provides the temporal bounding mechanism. Used when the perceived premises are not timeless observations but temporally bounded states of affairs, such as attributions, classifications, or roles that held only during a specific period."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Time-Indexed Construal"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/describes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an Opinion to the entity its propositional content is about — the subject of the claim."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Opinion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "describes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/opino/isDescribedBy"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/enables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a Construal to another Construal that it makes possible as a subsequent step in an inferential chain. A Construal enables another when it provides the evidential or logical basis from which the subsequent Construal can be constituted. For example, the Construal 'Fief is a Medieval Latin term' enables the Construal 'The Donation contains anachronistic Latin', which in turn grounds the Opinion 'The Donation is a Forgery'. Inverse counterpart of opino:presupposes in the inferential chain, though not declared as a formal OWL inverse. Subproperty of dul:hasPostcondition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "enables"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPostcondition"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/grounds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a Construal to the Opinion it supports as premises support a conclusion. Inverse of opino:isPremisedOn. Subproperty of dul:satisfies, preserving full DnS semantics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "grounds"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/opino/Opinion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/opino/isPremisedOn"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/hasEpistemicRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an EpistemicStatusParameter to the EpistemicRegion individual that represents its value in the epistemic quality space. Functional because each EpistemicStatusParameter is valued by exactly one EpistemicRegion at any given time. Subproperty of dul:hasRegion, scoped to opino:EpistemicStatusParameter as domain and opino:EpistemicRegion as range."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/EpistemicStatusParameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has epistemic region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/opino/EpistemicRegion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/hasEpistemicStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an Opinion to the parameter that carries its current epistemic status value. Functional because each Opinion has exactly one epistemic status at any given time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Opinion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has epistemic status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/opino/EpistemicStatusParameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a Construal to its constituent sub-situations, each representing an individual premise as perceived by the cognizer. The relation is recursive — a sub-Situation may itself have parts that ground it further, mirroring the CRMinf premise chain (J1 usedAsPremise). Each sub-Situation may optionally satisfy a dul:Description (e.g. a Framester frame), representing the inference logic (CRMinf J3 applies) through which that premise is interpreted. The conclusion drawn from the full Construal is always an opino:Opinion (dul:Description), connected via opino:grounds."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://w3id.org/opino/isPartOf"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/heldBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Shortcut property relating an opino:Opinion directly to the agent who holds it. Equivalent to navigating opino:Opinion --prov:wasGeneratedBy--> prov:Activity --prov:wasAssociatedWith--> prov:Agent. Retained for querying convenience."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Opinion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "held by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/holdsAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a TimeIndexedConstrual to the TimeInterval during which the construed state of affairs holds. A TimeIndexedConstrual represents a perspective-dependent set of facts that are valid only within a specific temporal bound — this property makes that bound explicit. For example, the attribution of a painting to the School of Caravaggio as perceived by the Zeri Foundation holds during the interval 1990–2005."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "holds at time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/involves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a Construal to any entity — object, agent, event, or abstract concept — that the cognizer perceives as participating in the construed state of affairs. Following the social psychology notion of construal (Ross 1987), the entities involved are not neutral facts but are perceived and interpreted through the cognizer's subjective lens. The Construal grounds the Opinion (subclass of Description)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "involves"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/isDescribedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of opino:describes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is described by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/opino/Opinion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse of opino:hasPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/isPremisedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an Opinion to the Construal that constitutes its premises — the set of facts as perceived by the cognizer from which the Opinion results as a conclusion. Subproperty of dul:isSatisfiedBy, preserving full DnS semantics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Opinion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is premised on"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/perceivedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a Construal to the cognizer whose perspective constitutes it. Shortcut for: grounds inverse → Opinion → prov:wasGeneratedBy → Activity → prov:wasAssociatedWith → Agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "perceived by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/presupposes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a Construal to another Construal  that must hold as a logical premise before it. Represents the inferential ordering between premise Construals in a chain of reasoning — the 'presupposed' Construal provides the evidential or logical ground that the dependent Construal builds upon. For example, the Construal 'Fief is a Medieval Latin term' is the presupposition of the Construal 'The Donation contains anachronistic Latin'. Subproperty of dul:hasPrecondition, defined in DUL as direct precedence applied to situations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "presupposes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/opino/Construal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPrecondition"
+  } ]
+}, {
+  "@id" : "http://w3id.org/opino/usesConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an Opinion to the concept being predicated of its subject. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/opino/Opinion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://w3id.org/opino/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "uses concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPostcondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPrecondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]

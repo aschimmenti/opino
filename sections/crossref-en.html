@@ -1,0 +1,966 @@
+<h2 id="crossreference" class="list">Cross-reference for OPINO - OPINion ONtology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by OPINO - OPINion ONtology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Assertion" title="http://w3id.org/opino/Assertion">Assertion</a></li>
+  <li><a href="#Conjecture" title="http://w3id.org/opino/Conjecture">Conjecture</a></li>
+  <li><a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a></li>
+  <li><a href="#EpistemicRegion" title="http://w3id.org/opino/EpistemicRegion">Epistemic Region</a></li>
+  <li><a href="#EpistemicStatusParameter" title="http://w3id.org/opino/EpistemicStatusParameter">Epistemic Status (Parameter)</a></li>
+  <li><a href="#Hypothesis" title="http://w3id.org/opino/Hypothesis">Hypothesis</a></li>
+  <li><a href="#Interpretation" title="http://w3id.org/opino/Interpretation">Interpretation</a></li>
+  <li><a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a></li>
+  <li><a href="#TimeIndexedConstrual" title="http://w3id.org/opino/TimeIndexedConstrual">Time-Indexed Construal</a></li>
+ </ul>
+ <div class="entity" id="Assertion">
+  <h3>Assertion<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/Assertion</p>
+  <div class="comment">
+   <span class="markdown">An Opinion the holder commits to as their current considered interpretation, supported by evidence or argument they regard as sufficient to warrant commitment.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#hasEpistemicStatus" title="http://w3id.org/opino/hasEpistemicStatus">has epistemic status</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="#AssertionValue" title="http://w3id.org/opino/AssertionValue">Assertion (Region)</a> <sup class="type-ni" title="named individual">ni</sup>)
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Conjecture">
+  <h3>Conjecture<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/Conjecture</p>
+  <div class="comment">
+   <span class="markdown">An Opinion held with minimal epistemic commitment, entertained as a possibility without sufficient evidence to assert it.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#hasEpistemicStatus" title="http://w3id.org/opino/hasEpistemicStatus">has epistemic status</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="#ConjectureValue" title="http://w3id.org/opino/ConjectureValue">Conjecture (Region)</a> <sup class="type-ni" title="named individual">ni</sup>)
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Construal">
+  <h3>Construal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/Construal</p>
+  <div class="comment">
+   <span class="markdown">A situation constituted by the premises as perceived by the agent responsible for an Opinion. It is perspective-dependent — it reifies the state of affairs from the standpoint of the cognizer, not an objective state of affairs. A Construal can be composed of parts, each of which is itself a dul:Situation representing an individual premise (i.e., another state of affairs). The dul:Situation, part of the Construal, can be satisfied by a secondary dul:Description.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation">Situation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#enables" title="http://w3id.org/opino/enables">enables</a> <sup class="type-op" title="object property">op</sup>, <a href="#grounds" title="http://w3id.org/opino/grounds">grounds</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPart" title="http://w3id.org/opino/hasPart">has part</a> <sup class="type-op" title="object property">op</sup>, <a href="#holdsAtTime" title="http://w3id.org/opino/holdsAtTime">holds at time</a> <sup class="type-op" title="object property">op</sup>, <a href="#involves" title="http://w3id.org/opino/involves">involves</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPartOf" title="http://w3id.org/opino/isPartOf">is part of</a> <sup class="type-op" title="object property">op</sup>, <a href="#perceivedBy" title="http://w3id.org/opino/perceivedBy">perceived by</a> <sup class="type-op" title="object property">op</sup>, <a href="#presupposes" title="http://w3id.org/opino/presupposes">presupposes</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#enables" title="http://w3id.org/opino/enables">enables</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPartOf" title="http://w3id.org/opino/isPartOf">is part of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPremisedOn" title="http://w3id.org/opino/isPremisedOn">is premised on</a> <sup class="type-op" title="object property">op</sup>, <a href="#presupposes" title="http://w3id.org/opino/presupposes">presupposes</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EpistemicRegion">
+  <h3>Epistemic Region<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/EpistemicRegion</p>
+  <div class="comment">
+   <span class="markdown">A region in the epistemic quality space representing the degree of individual commitment an agent holds toward an Opinion. Three values are defined: ConjectureValue (speculative), HypothesisValue (tentative), AssertionValue (committed). Community-level reception is handled separately via CiTO properties on hico:InterpretationAct.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region">Region</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasEpistemicRegion" title="http://w3id.org/opino/hasEpistemicRegion">has epistemic region</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#AssertionValue" title="http://w3id.org/opino/AssertionValue">Assertion (Region)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ConjectureValue" title="http://w3id.org/opino/ConjectureValue">Conjecture (Region)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#HypothesisValue" title="http://w3id.org/opino/HypothesisValue">Hypothesis (Region)</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EpistemicStatusParameter">
+  <h3>Epistemic Status (Parameter)<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/EpistemicStatusParameter</p>
+  <div class="comment">
+   <span class="markdown">A parameter component of an Opinion that carries its epistemic status value. In DnS terms, this is a typed component of the Description that gets valued by a region in the epistemic quality space. Each Opinion has exactly one EpistemicStatusParameter at any given time.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter">Parameter</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasEpistemicRegion" title="http://w3id.org/opino/hasEpistemicRegion">has epistemic region</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasEpistemicStatus" title="http://w3id.org/opino/hasEpistemicStatus">has epistemic status</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Hypothesis">
+  <h3>Hypothesis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/Hypothesis</p>
+  <div class="comment">
+   <span class="markdown">An Opinion held tentatively as the current best explanation, pending further evidence or argument. The holder commits to it provisionally while remaining open to revision.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#hasEpistemicStatus" title="http://w3id.org/opino/hasEpistemicStatus">has epistemic status</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="#HypothesisValue" title="http://w3id.org/opino/HypothesisValue">Hypothesis (Region)</a> <sup class="type-ni" title="named individual">ni</sup>)
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Interpretation">
+  <h3>Interpretation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/Interpretation</p>
+  <div class="comment">
+   <span class="markdown">An Opinion that results specifically from a hermeneutical interpretive act as defined by HiCO (hico:InterpretationAct). Distinguished from a generic Opinion by the type of prov:Activity that generated it. An Interpretation may simultaneously be a Conjecture, Hypothesis, or Assertion depending on its epistemic status.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://www.w3.org/ns/prov#wasGeneratedBy" target="_blank" title="http://www.w3.org/ns/prov#wasGeneratedBy">was Generated By</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="http://purl.org/emmedi/hico/InterpretationAct" target="_blank" title="http://purl.org/emmedi/hico/InterpretationAct">Interpretation Act</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Opinion">
+  <h3>Opinion<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/Opinion</p>
+  <div class="comment">
+   <span class="markdown">A description, in the DnS sense, representing a claim held by an agent about an entity or state of affairs. An Opinion is satisfied by a Construal — the set of facts as perceived by the cognizer that grounds the claim. An Opinion is generated by a prov:Activity, which attributes it to the agent responsible for its production.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description">Description</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#describes" title="http://w3id.org/opino/describes">describes</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEpistemicStatus" title="http://w3id.org/opino/hasEpistemicStatus">has epistemic status</a> <sup class="type-op" title="object property">op</sup>, <a href="#heldBy" title="http://w3id.org/opino/heldBy">held by</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPremisedOn" title="http://w3id.org/opino/isPremisedOn">is premised on</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesConcept" title="http://w3id.org/opino/usesConcept">uses concept</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#grounds" title="http://w3id.org/opino/grounds">grounds</a> <sup class="type-op" title="object property">op</sup>, <a href="#isDescribedBy" title="http://w3id.org/opino/isDescribedBy">is described by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TimeIndexedConstrual">
+  <h3>Time-Indexed Construal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/TimeIndexedConstrual</p>
+  <div class="comment">
+   <span class="markdown">A Construal where the perceived state of affairs holds only during a specific time interval. Inherits from both opino:Construal — carrying the perspectival and epistemic properties of a perception — and dul:TimeIndexedRelation, which provides the temporal bounding mechanism. Used when the perceived premises are not timeless observations but temporally bounded states of affairs, such as attributions, classifications, or roles that held only during a specific period.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#holdsAtTime" title="http://w3id.org/opino/holdsAtTime">holds at time</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval">Time Interval</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#describes" title="http://w3id.org/opino/describes">describes</a></li>
+  <li><a href="#enables" title="http://w3id.org/opino/enables">enables</a></li>
+  <li><a href="#grounds" title="http://w3id.org/opino/grounds">grounds</a></li>
+  <li><a href="#hasEpistemicRegion" title="http://w3id.org/opino/hasEpistemicRegion">has epistemic region</a></li>
+  <li><a href="#hasEpistemicStatus" title="http://w3id.org/opino/hasEpistemicStatus">has epistemic status</a></li>
+  <li><a href="#hasPart" title="http://w3id.org/opino/hasPart">has part</a></li>
+  <li><a href="#heldBy" title="http://w3id.org/opino/heldBy">held by</a></li>
+  <li><a href="#holdsAtTime" title="http://w3id.org/opino/holdsAtTime">holds at time</a></li>
+  <li><a href="#involves" title="http://w3id.org/opino/involves">involves</a></li>
+  <li><a href="#isDescribedBy" title="http://w3id.org/opino/isDescribedBy">is described by</a></li>
+  <li><a href="#isPartOf" title="http://w3id.org/opino/isPartOf">is part of</a></li>
+  <li><a href="#isPremisedOn" title="http://w3id.org/opino/isPremisedOn">is premised on</a></li>
+  <li><a href="#perceivedBy" title="http://w3id.org/opino/perceivedBy">perceived by</a></li>
+  <li><a href="#presupposes" title="http://w3id.org/opino/presupposes">presupposes</a></li>
+  <li><a href="#usesConcept" title="http://w3id.org/opino/usesConcept">uses concept</a></li>
+ </ul>
+ <div class="entity" id="describes">
+  <h3>describes<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/describes</p>
+  <div class="comment">
+   <span class="markdown">Relates an Opinion to the entity its propositional content is about — the subject of the claim.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes">describes</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isDescribedBy" title="http://w3id.org/opino/isDescribedBy">is described by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="enables">
+  <h3>enables<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/enables</p>
+  <div class="comment">
+   <span class="markdown">Relates a Construal to another Construal that it makes possible as a subsequent step in an inferential chain. A Construal enables another when it provides the evidential or logical basis from which the subsequent Construal can be constituted. For example, the Construal 'Fief is a Medieval Latin term' enables the Construal 'The Donation contains anachronistic Latin', which in turn grounds the Opinion 'The Donation is a Forgery'. Inverse counterpart of opino:presupposes in the inferential chain, though not declared as a formal OWL inverse. Subproperty of dul:hasPostcondition.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPostcondition" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPostcondition">has Postcondition</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="grounds">
+  <h3>grounds<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/grounds</p>
+  <div class="comment">
+   <span class="markdown">Relates a Construal to the Opinion it supports as premises support a conclusion. Inverse of opino:isPremisedOn. Subproperty of dul:satisfies, preserving full DnS semantics.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies">satisfies</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isPremisedOn" title="http://w3id.org/opino/isPremisedOn">is premised on</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasEpistemicRegion">
+  <h3>has epistemic region<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/hasEpistemicRegion</p>
+  <div class="comment">
+   <span class="markdown">Relates an EpistemicStatusParameter to the EpistemicRegion individual that represents its value in the epistemic quality space. Functional because each EpistemicStatusParameter is valued by exactly one EpistemicRegion at any given time. Subproperty of dul:hasRegion, scoped to opino:EpistemicStatusParameter as domain and opino:EpistemicRegion as range.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion">has Region</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#EpistemicStatusParameter" title="http://w3id.org/opino/EpistemicStatusParameter">Epistemic Status (Parameter)</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#EpistemicRegion" title="http://w3id.org/opino/EpistemicRegion">Epistemic Region</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasEpistemicStatus">
+  <h3>has epistemic status<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/hasEpistemicStatus</p>
+  <div class="comment">
+   <span class="markdown">Relates an Opinion to the parameter that carries its current epistemic status value. Functional because each Opinion has exactly one epistemic status at any given time.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter">has Parameter</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#EpistemicStatusParameter" title="http://w3id.org/opino/EpistemicStatusParameter">Epistemic Status (Parameter)</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasPart">
+  <h3>has part<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/hasPart</p>
+  <div class="comment">
+   <span class="markdown">Relates a Construal to its constituent sub-situations, each representing an individual premise as perceived by the cognizer. The relation is recursive — a sub-Situation may itself have parts that ground it further, mirroring the CRMinf premise chain (J1 usedAsPremise). Each sub-Situation may optionally satisfy a dul:Description (e.g. a Framester frame), representing the inference logic (CRMinf J3 applies) through which that premise is interpreted. The conclusion drawn from the full Construal is always an opino:Opinion (dul:Description), connected via opino:grounds.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart">has Part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation">Situation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isPartOf" title="http://w3id.org/opino/isPartOf">is part of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="heldBy">
+  <h3>held by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/heldBy</p>
+  <div class="comment">
+   <span class="markdown">Shortcut property relating an opino:Opinion directly to the agent who holds it. Equivalent to navigating opino:Opinion --prov:wasGeneratedBy--&gt; prov:Activity --prov:wasAssociatedWith--&gt; prov:Agent. Retained for querying convenience.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith">associated With</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="holdsAtTime">
+  <h3>holds at time<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/holdsAtTime</p>
+  <div class="comment">
+   <span class="markdown">Relates a TimeIndexedConstrual to the TimeInterval during which the construed state of affairs holds. A TimeIndexedConstrual represents a perspective-dependent set of facts that are valid only within a specific temporal bound — this property makes that bound explicit. For example, the attribution of a painting to the School of Caravaggio as perceived by the Zeri Foundation holds during the interval 1990–2005.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesTime">includes Time</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval">Time Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="involves">
+  <h3>involves<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/involves</p>
+  <div class="comment">
+   <span class="markdown">Relates a Construal to any entity — object, agent, event, or abstract concept — that the cognizer perceives as participating in the construed state of affairs. Following the social psychology notion of construal (Ross 1987), the entities involved are not neutral facts but are perceived and interpreted through the cognizer's subjective lens. The Construal grounds the Opinion (subclass of Description).</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor">is Setting For</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isDescribedBy">
+  <h3>is described by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/isDescribedBy</p>
+  <div class="comment">
+   <span class="markdown">Inverse of opino:describes.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy">is Described By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#describes" title="http://w3id.org/opino/describes">describes</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isPartOf">
+  <h3>is part of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/isPartOf</p>
+  <div class="comment">
+   <span class="markdown">Inverse of opino:hasPart</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf">is Part Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasPart" title="http://w3id.org/opino/hasPart">has part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isPremisedOn">
+  <h3>is premised on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/isPremisedOn</p>
+  <div class="comment">
+   <span class="markdown">Relates an Opinion to the Construal that constitutes its premises — the set of facts as perceived by the cognizer from which the Opinion results as a conclusion. Subproperty of dul:isSatisfiedBy, preserving full DnS semantics.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy">is Satisfied By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#grounds" title="http://w3id.org/opino/grounds">grounds</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="perceivedBy">
+  <h3>perceived by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/perceivedBy</p>
+  <div class="comment">
+   <span class="markdown">Relates a Construal to the cognizer whose perspective constitutes it. Shortcut for: grounds inverse → Opinion → prov:wasGeneratedBy → Activity → prov:wasAssociatedWith → Agent.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith">associated With</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="presupposes">
+  <h3>presupposes<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/presupposes</p>
+  <div class="comment">
+   <span class="markdown">Relates a Construal to another Construal that must hold as a logical premise before it. Represents the inferential ordering between premise Construals in a chain of reasoning — the 'presupposed' Construal provides the evidential or logical ground that the dependent Construal builds upon. For example, the Construal 'Fief is a Medieval Latin term' is the presupposition of the Construal 'The Donation contains anachronistic Latin'. Subproperty of dul:hasPrecondition, defined in DUL as direct precedence applied to situations.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPrecondition" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPrecondition">has Precondition</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Construal" title="http://w3id.org/opino/Construal">Construal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesConcept">
+  <h3>uses concept<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/usesConcept</p>
+  <div class="comment">
+   <span class="markdown">Relates an Opinion to the concept being predicated of its subject. </span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept">uses Concept</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Opinion" title="http://w3id.org/opino/Opinion">Opinion</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept" target="_blank" title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept">Concept</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#AssertionValue" title="http://w3id.org/opino/AssertionValue">Assertion (Region)</a></li>
+  <li><a href="#ConjectureValue" title="http://w3id.org/opino/ConjectureValue">Conjecture (Region)</a></li>
+  <li><a href="#HypothesisValue" title="http://w3id.org/opino/HypothesisValue">Hypothesis (Region)</a></li>
+ </ul>
+ <div class="entity" id="AssertionValue">
+  <h3>Assertion (Region)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/AssertionValue</p>
+  <div class="comment">
+   <span class="markdown">An opinion the holder commits to as their current considered interpretation, supported by evidence or argument they regard as sufficient.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#EpistemicRegion" title="http://w3id.org/opino/EpistemicRegion">Epistemic Region</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ConjectureValue">
+  <h3>Conjecture (Region)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/ConjectureValue</p>
+  <div class="comment">
+   <span class="markdown">An opinion entertained as a possibility without sufficient evidence to assert it. The holder acknowledges the claim is speculative.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#EpistemicRegion" title="http://w3id.org/opino/EpistemicRegion">Epistemic Region</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="HypothesisValue">
+  <h3>Hypothesis (Region)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/opino/HypothesisValue</p>
+  <div class="comment">
+   <span class="markdown">An opinion held tentatively, pending further evidence or argument. The holder commits to it as the current best explanation while remaining open to revision.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://w3id.org/opino/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#EpistemicRegion" title="http://w3id.org/opino/EpistemicRegion">Epistemic Region</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>
