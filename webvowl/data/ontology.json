@@ -89,11 +89,11 @@
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "46",
-    "type" : "owl:intersectionOf"
-  }, {
     "id" : "42",
     "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:intersectionOf"
   }, {
     "id" : "51",
     "type" : "owl:Class"
@@ -373,6 +373,15 @@
     "attributes" : [ "external" ],
     "id" : "18"
   }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeInterval"
+    },
+    "attributes" : [ "external" ],
+    "id" : "42"
+  }, {
     "iri" : "http://w3id.org/opino/TimeIndexedConstrual",
     "baseIri" : "http://w3id.org/opino",
     "instances" : 0,
@@ -394,15 +403,6 @@
     },
     "attributes" : [ "intersection" ],
     "id" : "46"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TimeInterval"
-    },
-    "attributes" : [ "external" ],
-    "id" : "42"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collective",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -542,10 +542,10 @@
     "id" : "40",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "15",
+    "id" : "41",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "41",
+    "id" : "15",
     "type" : "owl:objectProperty"
   }, {
     "id" : "44",
@@ -877,17 +877,6 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "isPartOf"
-    },
-    "domain" : "2",
-    "subproperty" : [ "7" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "15"
-  }, {
     "iri" : "http://w3id.org/opino/holdsAtTime",
     "baseIri" : "http://w3id.org/opino",
     "range" : "42",
@@ -910,6 +899,17 @@
     },
     "attributes" : [ "object" ],
     "id" : "41"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "2",
+    "subproperty" : [ "7" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "15"
   }, {
     "iri" : "http://w3id.org/opino/involves",
     "baseIri" : "http://w3id.org/opino",
@@ -955,7 +955,7 @@
     "comment" : {
       "en" : "Relates a Construal to its constituent sub-situations, each representing an individual premise as perceived by the cognizer. The relation is recursive — a sub-Situation may itself have parts that ground it further, mirroring the CRMinf premise chain (J1 usedAsPremise). Each sub-Situation may optionally satisfy a dul:Description (e.g. a Framester frame), representing the inference logic (CRMinf J3 applies) through which that premise is interpreted. The conclusion drawn from the full Construal is always an opino:Opinion (dul:Description), connected via opino:grounds."
     },
-    "attributes" : [ "allValues", "object" ],
+    "attributes" : [ "object", "allValues" ],
     "id" : "47"
   }, {
     "iri" : "http://w3id.org/opino/hasEpistemicStatus",

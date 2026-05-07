@@ -863,9 +863,6 @@ under the Creative Commons Attribution 4.0 International License
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://w3id.org/opino/</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Hypothesis (Region)</rdfs:label>
     </owl:NamedIndividual>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
     
 
 
